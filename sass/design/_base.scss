@@ -1,0 +1,14 @@
+html {
+  .header-wrap {
+    .header-content-wrap {
+      @include bp-sm {
+        text-align: center;
+      }
+      .checkbox {
+        @include bp-sm {
+          display: inline-block;
+        }
+      }
+    }
+  }  
+}

@@ -8788,3 +8788,104 @@ button.close {
     display: none !important;
   }
 }
+/** Fonts **/
+/** Breakpoint stuff **/
+/** Advanced CSS Stuff **/
+/** Forms **/
+/** Flexbox **/
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes right {
+  from {
+    -moz-transform: translateX(50%);
+    right: 50%;
+  }
+  to {
+    -moz-transform: translateX(0%);
+    right: 0%;
+  }
+}
+@-webkit-keyframes right {
+  from {
+    -webkit-transform: translateX(50%);
+    right: 50%;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+    right: 0%;
+  }
+}
+@keyframes right {
+  from {
+    transform: translateX(50%);
+    right: 50%;
+  }
+  to {
+    transform: translateX(0%);
+    right: 0%;
+  }
+}
+@-moz-keyframes rightcenter {
+  from {
+    -moz-transform: translateX(0%);
+    right: 0%;
+  }
+  to {
+    -moz-transform: translateX(50%);
+    right: 50%;
+  }
+}
+@-webkit-keyframes rightcenter {
+  from {
+    -webkit-transform: translateX(0%);
+    right: 0%;
+  }
+  to {
+    -webkit-transform: translateX(50%);
+    right: 50%;
+  }
+}
+@keyframes rightcenter {
+  from {
+    transform: translateX(0%);
+    right: 0%;
+  }
+  to {
+    transform: translateX(50%);
+    right: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 3, ../sass/design/_base.scss */
+  html .header-wrap .header-content-wrap {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 7, ../sass/design/_base.scss */
+  html .header-wrap .header-content-wrap .checkbox {
+    display: inline-block;
+  }
+}
