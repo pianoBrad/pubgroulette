@@ -104,19 +104,21 @@
         }
       }
     });
- 
-    $('.game-rules').html(''); 
-    var html = "<h3>Your Custom #PUBG Rules:</h3>";  
-    $(game_conditions).each(function(index, value) {
-      html += '<div class="game-rule' + value.type + '">';
-      html += '<h4 class="rule-category">' + value.type + '</h4>';
-      html += '<ul class="rule-content">';
-      html += '<li class="rule-name"><h4>' + value.name + '</h4></li>';
-      html += '<li class="rule-description">' + value.description + '</li>';
-      html += '</ul>';
-      html += '</div>';
-    });
-    $('.game-rules').append(html);
+
+    if (game_conditions.length > 0) { 
+      $('.game-rules').html(''); 
+      var html = "<h3>Your Custom #PUBG Rules:</h3>";  
+      $(game_conditions).each(function(index, value) {
+        html += '<div class="game-rule' + value.type + '">';
+        html += '<h4 class="rule-category">' + value.type + '</h4>';
+        html += '<ul class="rule-content">';
+        html += '<li class="rule-name"><h4>' + value.name + '</h4></li>';
+        html += '<li class="rule-description">' + value.description + '</li>';
+        html += '</ul>';
+        html += '</div>';
+      });
+      $('.game-rules').append(html);
+    }
   });
 
 

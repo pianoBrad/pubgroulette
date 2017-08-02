@@ -1,5 +1,21 @@
 html {
+  height: 100%;
+  min-height: 100%;
+  body {
+    height: 100%;
+  }
+  
+  .container-fluid {
+    width: 100%;
+  }  
+
+  .site-wrap {
+    @include flexbox();
+    @include flex-direction(column);
+    height: 100%;
+  }
   .header-wrap {
+    background-color: #eee;
     .header-content-wrap {
       @include bp-sm {
         text-align: center;
@@ -10,5 +26,12 @@ html {
         }
       }
     }
+  }
+  .content-wrap {
+    flex: 1 1 auto;
+  }
+  .content-bottom-wrap {
+    background-color: #ddd;
+    margin-top: auto;
   }  
 }
