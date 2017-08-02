@@ -21,7 +21,11 @@ html {
       display: inline-block;
     }
     h1 {
+      @include gradient-text-yellow();
       margin-top: 0; 
+      @include bp-sm {
+        @include rem-fallback(font-size, $font-size-h1 + 30);
+      }
     }
     
     .header-content-wrap {

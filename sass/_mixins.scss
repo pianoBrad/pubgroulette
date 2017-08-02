@@ -370,6 +370,13 @@
   }
 }
 
+@mixin gradient-text-yellow() {
+  background: -webkit-linear-gradient(top, $gold, $yellow, $dark-gold);
+  background: linear-gradient(top, $gold, $yellow, $dark-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
 @mixin bg-yellow() {
   background: rgb(242,172,32); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(242,172,32,1) 0%, rgba(255,222,31,1) 51%, rgba(201,107,15,1) 100%); /* FF3.6-15 */

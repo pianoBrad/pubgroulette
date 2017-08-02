@@ -8990,20 +8990,31 @@ html .header-wrap h4 {
 }
 /* line 23, ../sass/design/_header.scss */
 html .header-wrap h1 {
+  background: -webkit-linear-gradient(top, #f2ac20, #ffde1f, #c96b0f);
+  background: linear-gradient(top, #f2ac20, #ffde1f, #c96b0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-top: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 27, ../sass/design/_header.scss */
+  /* line 23, ../sass/design/_header.scss */
+  html .header-wrap h1 {
+    font-size: 90px;
+    font-size: 9rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 31, ../sass/design/_header.scss */
   html .header-wrap .header-content-wrap {
     text-align: center;
   }
 }
-/* line 32, ../sass/design/_header.scss */
+/* line 36, ../sass/design/_header.scss */
 html .header-wrap .header-content-wrap > .row:first-child {
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
-  /* line 36, ../sass/design/_header.scss */
+  /* line 40, ../sass/design/_header.scss */
   html .header-wrap .header-content-wrap .checkbox {
     margin-left: 10px;
     margin-left: 1rem;
