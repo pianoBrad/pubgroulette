@@ -8998,8 +8998,12 @@ html .header-wrap h1 {
     text-align: center;
   }
 }
+/* line 32, ../sass/design/_header.scss */
+html .header-wrap .header-content-wrap > .row:first-child {
+  text-align: center;
+}
 @media only screen and (min-width: 768px) {
-  /* line 31, ../sass/design/_header.scss */
+  /* line 36, ../sass/design/_header.scss */
   html .header-wrap .header-content-wrap .checkbox {
     margin-left: 10px;
     margin-left: 1rem;

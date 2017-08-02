@@ -23,10 +23,15 @@ html {
     h1 {
       margin-top: 0; 
     }
-  
+    
     .header-content-wrap {
       @include bp-sm {
         text-align: center;
+      }
+      > .row {
+        &:first-child {
+          text-align: center;
+        }
       }
       .checkbox {
         @include bp-sm {
