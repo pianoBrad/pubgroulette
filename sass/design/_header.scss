@@ -1,19 +1,15 @@
 html {
   .header-wrap {
+    @include bg-dark();
     @include rem-fallback(font-size, $font-size-header-base);
     @include rem-fallback(padding-top, $spacing-y-base);
-    @include rem-fallback(padding-bottom, $spacing-y-base);
-  
-    background: rgb(30,87,153); /* Old browsers */
-    background: -moz-linear-gradient(left,  rgba(30,87,153,1) 0%, rgba(10,10,10,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(30,87,153,1) 0%,rgba(10,10,10,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(30,87,153,1) 0%,rgba(10,10,10,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0a0a0a',GradientType=1 ); /* IE6-9 */
-  
+    @include rem-fallback(padding-bottom, $spacing-y-base); 
+ 
     color: $yellow; 
     font-family: $teko;
     h4 {
       @include bg-yellow();
+      @include box-shadow($box-shadow-base);
       @include rem-fallback(padding, $spacing-y-sm - 5);
       @include rem-fallback(padding-left, $spacing-x-base);
       @include rem-fallback(padding-right, $spacing-x-base);

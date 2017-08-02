@@ -6,9 +6,14 @@ html {
     height: 100%;
     line-height: $line-height;
   }
- 
+
+  .btn {
+    @include rem-fallback(font-size, $font-size-btn);
+    border-radius: 0;
+  } 
   .btn-primary {
     @include bg-yellow();   
+    @include box-shadow($box-shadow-base);
     color: $dark;
     font-family: $teko;
     &:hover {
@@ -22,7 +27,8 @@ html {
   }  
 
   h1 { @include rem-fallback(font-size, $font-size-h1); }
-  
+  h1, h2, h3, h4 { text-transform: uppercase; } 
+ 
   .site-wrap {
     @include flexbox();
     @include flex-direction(column);
@@ -32,6 +38,8 @@ html {
     flex: 1 1 auto;
   }
   .content-bottom-wrap {
+    @include bg-dark();
+    color: $yellow;
     background-color: #ddd;
     margin-top: auto;
   }  

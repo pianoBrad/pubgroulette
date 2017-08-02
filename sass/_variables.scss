@@ -24,6 +24,7 @@ $side-spacing: 30px;
 
 $font-size-h1: 60;
 $font-size-header-base: $font-size + 4;
+$font-size-btn: $font-size + 4;
 
 $font-weight-thin: 100;
 $font-weight-light: 300;
@@ -51,4 +52,4 @@ $spacing-y-section-sm: 90;
 $transition-time-base: 0.2s;
 
 // Shadows
-$box-shadow-base: 0 0 1px 3px rgba(0,0,0,0.2);
+$box-shadow-base: 0 2px 1px 0px rgba(0,0,0,0.5);

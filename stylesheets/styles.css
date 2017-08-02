@@ -8890,6 +8890,12 @@ html body {
   line-height: 1.3em;
 }
 /* line 10, ../sass/design/_base.scss */
+html .btn {
+  font-size: 20px;
+  font-size: 2rem;
+  border-radius: 0;
+}
+/* line 14, ../sass/design/_base.scss */
 html .btn-primary {
   background: #f2ac20;
   /* Old browsers */
@@ -8899,10 +8905,13 @@ html .btn-primary {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #f2ac20 0%, #ffde1f 51%, #c96b0f 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.5);
   color: #0a0a0a;
   font-family: "Teko", sans-serif;
 }
-/* line 14, ../sass/design/_base.scss */
+/* line 19, ../sass/design/_base.scss */
 html .btn-primary:hover {
   background: #f2ac20;
   /* Old browsers */
@@ -8914,16 +8923,20 @@ html .btn-primary:hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   color: #0a0a0a;
 }
-/* line 20, ../sass/design/_base.scss */
+/* line 25, ../sass/design/_base.scss */
 html .container-fluid {
   width: 100%;
 }
-/* line 24, ../sass/design/_base.scss */
+/* line 29, ../sass/design/_base.scss */
 html h1 {
   font-size: 60px;
   font-size: 6rem;
 }
-/* line 26, ../sass/design/_base.scss */
+/* line 30, ../sass/design/_base.scss */
+html h1, html h2, html h3, html h4 {
+  text-transform: uppercase;
+}
+/* line 32, ../sass/design/_base.scss */
 html .site-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8938,24 +8951,12 @@ html .site-wrap {
   flex-direction: column;
   height: 100%;
 }
-/* line 31, ../sass/design/_base.scss */
+/* line 37, ../sass/design/_base.scss */
 html .content-wrap {
   flex: 1 1 auto;
 }
-/* line 34, ../sass/design/_base.scss */
+/* line 40, ../sass/design/_base.scss */
 html .content-bottom-wrap {
-  background-color: #ddd;
-  margin-top: auto;
-}
-
-/* line 2, ../sass/design/_header.scss */
-html .header-wrap {
-  font-size: 20px;
-  font-size: 2rem;
-  padding-top: 15px;
-  padding-top: 1.5rem;
-  padding-bottom: 15px;
-  padding-bottom: 1.5rem;
   background: #1e5799;
   /* Old browsers */
   background: -moz-linear-gradient(left, #1e5799 0%, #0a0a0a 100%);
@@ -8964,12 +8965,31 @@ html .header-wrap {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #1e5799 0%, #0a0a0a 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0a0a0a',GradientType=1 );
-  /* IE6-9 */
+  color: #ffde1f;
+  background-color: #ddd;
+  margin-top: auto;
+}
+
+/* line 2, ../sass/design/_header.scss */
+html .header-wrap {
+  background: #1e5799;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #1e5799 0%, #0a0a0a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1e5799 0%, #0a0a0a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1e5799 0%, #0a0a0a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font-size: 20px;
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-top: 1.5rem;
+  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
   color: #ffde1f;
   font-family: "Teko", sans-serif;
 }
-/* line 15, ../sass/design/_header.scss */
+/* line 10, ../sass/design/_header.scss */
 html .header-wrap h4 {
   background: #f2ac20;
   /* Old browsers */
@@ -8979,6 +8999,9 @@ html .header-wrap h4 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #f2ac20 0%, #ffde1f 51%, #c96b0f 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.5);
   padding: 5px;
   padding: 0.5rem;
   padding-left: 15px;
@@ -8988,7 +9011,7 @@ html .header-wrap h4 {
   color: #0a0a0a;
   display: inline-block;
 }
-/* line 23, ../sass/design/_header.scss */
+/* line 19, ../sass/design/_header.scss */
 html .header-wrap h1 {
   background: -webkit-linear-gradient(top, #f2ac20, #ffde1f, #c96b0f);
   background: linear-gradient(top, #f2ac20, #ffde1f, #c96b0f);
@@ -8997,24 +9020,24 @@ html .header-wrap h1 {
   margin-top: 0;
 }
 @media only screen and (min-width: 768px) {
-  /* line 23, ../sass/design/_header.scss */
+  /* line 19, ../sass/design/_header.scss */
   html .header-wrap h1 {
     font-size: 90px;
     font-size: 9rem;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 31, ../sass/design/_header.scss */
+  /* line 27, ../sass/design/_header.scss */
   html .header-wrap .header-content-wrap {
     text-align: center;
   }
 }
-/* line 36, ../sass/design/_header.scss */
+/* line 32, ../sass/design/_header.scss */
 html .header-wrap .header-content-wrap > .row:first-child {
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
-  /* line 40, ../sass/design/_header.scss */
+  /* line 36, ../sass/design/_header.scss */
   html .header-wrap .header-content-wrap .checkbox {
     margin-left: 10px;
     margin-left: 1rem;
