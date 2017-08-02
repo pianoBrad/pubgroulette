@@ -8,18 +8,12 @@ html {
   }
  
   .btn-primary {
-    background: rgb(242,172,32); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(242,172,32,1) 0%, rgba(255,222,31,1) 51%, rgba(201,107,15,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(242,172,32,1) 0%,rgba(255,222,31,1) 51%,rgba(201,107,15,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(242,172,32,1) 0%,rgba(255,222,31,1) 51%,rgba(201,107,15,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    
+    @include bg-yellow();   
     color: $dark;
+    font-family: $teko;
     &:hover {
+      @include bg-yellow-reverse();
       color: $dark;
-      background: rgb(242,172,32); /* Old browsers */
-      background: -moz-linear-gradient(top,  rgba(201,107,15,1) 0%, rgba(255,222,31,1) 51%, rgba(242,172,32,1) 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(top,  rgba(201,107,15,1) 0%,rgba(255,222,31,1) 51%,rgba(242,172,32,1) 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom,  rgba(201,107,15,1) 0%,rgba(255,222,31,1) 51%,rgba(242,172,32,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
   }
  

@@ -12,6 +12,14 @@ html {
   
     color: $yellow; 
     font-family: $teko;
+    h4 {
+      @include bg-yellow();
+      @include rem-fallback(padding, $spacing-y-sm - 5);
+      @include rem-fallback(padding-left, $spacing-x-base);
+      @include rem-fallback(padding-right, $spacing-x-base);
+      color: $dark;
+      display: inline-block;
+    }
     h1 {
       margin-top: 0; 
     }
