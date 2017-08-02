@@ -4,6 +4,7 @@ html {
   body {
     @include rem-fallback(font-size, $font-size);
     height: 100%;
+    font-family: $teko;
     line-height: $line-height;
   }
 
@@ -38,9 +39,8 @@ html {
     flex: 1 1 auto;
   }
   .content-bottom-wrap {
-    @include bg-dark();
+    background-color: $dark; 
     color: $yellow;
-    background-color: #ddd;
     margin-top: auto;
   }  
 }

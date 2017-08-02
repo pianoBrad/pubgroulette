@@ -19,6 +19,7 @@ html {
     h1 {
       @include gradient-text-yellow();
       margin-top: 0; 
+      text-transform: none;
       @include bp-sm {
         @include rem-fallback(font-size, $font-size-h1 + 30);
       }
